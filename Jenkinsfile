@@ -1,11 +1,11 @@
 pipeline {
 
   environment {
-    PROJECT = "beaming-force-358817"
+    PROJECT = "chat-xe"
     APP_NAME = "gceme"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "gke"
-    CLUSTER_ZONE = "us-central1"
+    CLUSTER = "glearnk8s-cluster-prod"
+    CLUSTER_ZONE = "us-east1"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
   }
